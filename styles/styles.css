@@ -1,0 +1,185 @@
+body {
+    background-image: url('../Img/fondo.jpg');
+    width: 100vw;
+    height: auto;  
+    align-items: center;
+    background-color: #100E18;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .menu{
+    background: linear-gradient(90deg, rgb(25, 10, 235), rgb(28, 183, 255));
+    width: 100%;
+    height:150px ;
+  
+  }
+  
+  a{
+    
+    
+    align-items: center;
+    margin: 5px 450px;
+    display: flex;
+    justify-content:center ;
+    color: #ffffff;
+    
+    
+  }
+  
+  .producto{
+    background-color: #07d9f5;
+    width: 80px;
+    border-radius: 10px;
+    
+  }
+  
+  .compras{
+    background-color: #07d9f5;
+    width: 80px;
+    border-radius: 10px;
+  }
+  
+  p{
+    color: #ffffff;
+    font-size: vh;
+  }
+  
+  
+  header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #h1-title {
+    color: #ffffff;    
+  }
+  
+  #main {
+    width: 100%;
+    height: 77%;
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 20rem;
+    height: 30rem;
+    border-radius: 10px;
+    background-color: #4a4b4d;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+  }
+  
+  .header-card {
+    width: 100%;  
+    display: flex;
+    flex-direction: column;    
+  }
+  
+  #h2 {
+    color: #ffffff;
+    margin: 2rem;  
+    width: 100%;
+  }
+  
+  #p-header {
+    text-align: center;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  
+  
+  .card-main {
+    margin-top: 1rem;
+    width: 100%;
+    height: 0.5em;
+    background: linear-gradient(90deg, rgb(235, 136, 7), rgb(241, 53, 20),rgb(227, 241, 20));
+  }
+  
+  .card_imagen {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+
+  
+  .button {
+    margin-top: 2em;
+    width: 30%;
+    height: 2.0rem;
+    border-radius: 25px;
+    background-color: rgb(172, 175, 175);
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #ffffff;
+    color: #2d0bee;
+  }
+  
+  footer {
+    width: 100%;
+    height: 10%;
+    background-color: #04000c;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  footer img {
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  footer h2 {
+    color: #ffff;
+  }
+
+  .card_producto{
+    
+    background-color: #d81717;
+    background-size: 100%;
+    
+  }
+
+  p{
+    
+  }
+
+
+  h2{
+    color: #ffffff;
+  }
+
+ 
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #ff2b60;
+    margin: 30px 50px;
+  
+
+    
+  }
+
+.button{
+  
+}
