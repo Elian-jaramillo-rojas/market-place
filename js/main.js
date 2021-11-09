@@ -1,5 +1,3 @@
-
-
 carrito = []
 
 const container_productos = document.querySelector('.container_products');
@@ -35,8 +33,9 @@ const mostartProductos = () => {
         nombre_producto.textContent = items.nombre
         precio_producto.textContent = items.precio
         div_image.classList.add('card_imagen')
-        card_main.classList.add('card-main')
         image_card.setAttribute('src',items.imge)
+        card_main.classList.add('card-main')
+        
 
         btn_agregar_carrito.setAttribute('id_product', items.id)        
         btn_agregar_carrito.textContent = 'Comprar';
@@ -45,14 +44,15 @@ const mostartProductos = () => {
         btn_agregar_carrito.addEventListener('click', agregarCarrito);
 
         card_producto.appendChild(nombre_producto)
-        
         card_producto.appendChild(card_main)
-        card_producto.appendChild(div_image)
         
-        div_image.appendChild(image_card)
+        
+        
         card_producto.appendChild(precio_producto)
         
-
+        
+        card_producto.appendChild(div_image)
+        div_image.appendChild(image_card)
         container_productos.appendChild(card_producto)
         card_producto.appendChild(btn_agregar_carrito)
         /*main.appendChild(card_producto)*/
@@ -79,10 +79,12 @@ const mostrarCarito = () => {
         const card_producto_cart = document.createElement('div');
         const name = document.createElement('p');
         const price = document.createElement('p');
+        
         const contador = document.createElement('p');
         const btn_suma = document.createElement('button');
         const btn_resta = document.createElement('button');
         const btn_eliminar = document.createElement('button');
+        
         btn_suma.setAttribute('id_product', todos_productos[0].id);
         btn_resta.setAttribute('id_product',todos_productos[0].id);
         btn_eliminar.setAttribute('id_product',todos_productos[0].id);
@@ -92,10 +94,12 @@ const mostrarCarito = () => {
         btn_suma.textContent = '+';
         btn_resta.textContent = '-'
         btn_eliminar.textContent = 'X';
+        
         contador.textContent = cont;
 
         card_producto_cart.classList.add('card_producto')
         card_producto_cart.appendChild(name);
+        
         card_producto_cart.appendChild(price);
         card_producto_cart.appendChild(contador)
         card_producto_cart.appendChild(btn_suma);
@@ -105,6 +109,9 @@ const mostrarCarito = () => {
         btn_suma.addEventListener('click', agregarCarrito);
         btn_resta.addEventListener('click', restarProducto);
         btn_eliminar.addEventListener('click', eliminarProducto)
+        
+        
+        
         cart.appendChild(card_producto_cart);
     })
 }
